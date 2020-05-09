@@ -1,5 +1,3 @@
-{-# LANGUAGE ScopedTypeVariables #-}
-
 import Foreign.Marshal.Array (newArray)
 import Control.Exception (bracket)
 import Data.Int (Int8)
