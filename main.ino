@@ -113,14 +113,14 @@ void clearEEPROM() {
       Serial.print(".");
     }
   }
-  Serial.print(" done");
+  Serial.println(" done");
 }
 
 // common anode
 // #include "rom/5611ah.h"
 
 // common cathode
-#include "rom/1741.h"
+#include "rom/1741_mess.h"
 
 void uploadEEPROM() {
   Serial.print("Erasing EEPROM");
@@ -130,7 +130,7 @@ void uploadEEPROM() {
       Serial.print(".");
     }
   }
-  Serial.print(" done");
+  Serial.println(" done");
 }
 
 void setup() {
