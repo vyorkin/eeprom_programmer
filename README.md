@@ -11,15 +11,21 @@ xxd -i rom.bin | sed 's/unsigned char/const byte/; $ d' > rom.h
 To run a script-program written in Haskell you can either compile it and
 then run the produced executable file by doing
 
-  ghc --make makerom
+```sh
+ghc --make makerom
+```
 
 and then
 
-  ./makerom
+```sh
+./makerom
+```
 
 or you can use the `runhaskell` command like so:
 
-  runhaskell makerom.hs
+```sh
+runhaskell makerom.hs
+```
 
 and your program will be executed on the fly
 
